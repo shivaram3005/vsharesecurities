@@ -1,0 +1,88 @@
+<div>
+    <div id="d1">
+        <div id="d2">
+            <div id="d3">
+                <h1 id="head1">VShare Securities<br><br></h1>
+
+            </div>
+            <div id="d4" *ngIf="val1">
+                <button (click)="toLogin()">Login</button>
+                <button (click)="tosignup()">Signup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf=val1>
+    <section class="section-6">
+        <section>
+            <h2>Access my chart</h2>
+            <hr style="border:1px solid gold; width:15%;">
+            <img src="https://www.hopkinsmedicine.org/sebin/d/k/my-chart.svg" >
+            <p>Manage appointments, communicate with your provider,
+                receive the updates as soon as possible.</p>
+         </section>
+        <section>
+            <h2>Online Money Transfer</h2>
+            <hr style="border: 1px solid gold; width:15%;">
+            <img src="https://www.hopkinsmedicine.org/sebin/l/a/bill-pay.svg">
+            <p>Conveniently pay your money online,
+                 over the phone,mail or through any convenient way.</p>
+            
+     </section>
+        <section>
+            <h2>Financial Assistance</h2>
+            <hr style="border: 1px solid gold; width:15%;">
+            <img src="https://www.hopkinsmedicine.org/sebin/r/z/assistance.svg">
+            <p>If you are in need of financial assistance regarding your
+                 trading we provide it too .We may be able to help.</p>
+                 </section>
+    </section>
+
+        
+     <section class="section-7">
+                     
+       <b><h1 style="text-align: center; margin: 0px;" class=featured-card-header>
+        OUR SERVICES</h1> 
+    </b>
+        <hr style="border: 2px solid rgb(21, 111, 230); width:5%;">
+       <div>
+            <p class="para-padding">
+                Online brokers on our list, such as Tradestation, TD Ameritrade, and Interactive Brokers,
+                 have professional or
+                   advanced versions of their platforms that feature
+                  
+            </p>
+       </div>
+       
+        <section>
+            <img src="https://lh3.googleusercontent.com/46v8U_zt-ErYw2kq3M3_Xw2aAU78ejWz2Biupq0Ni8t24FCY9eerkutYrVHak2ADyll2ocQ=s85">
+            <h3>
+              <b> We notify you upon the trends in trading</b>
+           </h3>
+           <p>Assess how much capital you're willing to risk on each trade.
+                Many successful day traders risk less than 1% to 2% of their account per trade</p>
+        </section>
+        <section>
+            <img src="https://lh3.googleusercontent.com/Zjwreg4g1vODgknIg0eIykwIWkr2oLLk_xeDqqKuwh-QNvqD5stCsBYUYr7tSFsArNP_zg=s85">
+            <h3>
+               <b>Trading in a trust-worthy manner</b>
+           </h3>
+           <p>Many orders placed by investors and traders begin to
+                execute as soon as the markets open in the morning, which contributes 
+                to price volatility
+           </p>
+        </section>
+        <section>
+
+            <img src="https://lh3.googleusercontent.com/NTe7AV-bS5UgTxXshNGILoJPy5vaMC4ZNmh11KGXrXDb87tufnKl6xMIaX2X3k1LfyIs=s85">
+            <h3>
+            <b> Increasing customers everyday</b>
+            </h3>
+            <p>Focus on a maximum of one to two stocks during a session.
+                 Tracking and finding opportunities is easier with just a few stocks
+                . Recently, it has become increasingly common to be able to trade fractional shares</p>
+        </section>
+    </section>
+</div>
+<router-outlet *ngIf="val" ></router-outlet>
